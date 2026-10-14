@@ -143,7 +143,99 @@
     create reliable and secure computing solutions.
   </p>
 </section>
+  <section id="review">
+    <h2>Code Review</h2>
+    <p>
+      This section presents my CS 499 code review, which examines my original
+      Travlr application, identifies areas for improvement, and explains the
+      planned enhancements in software design and engineering, algorithms
+      and data structures, and databases.
+    </p>
 
+  </section>
+
+  <section id="software">
+    <h2>Software Design and Engineering</h2>
+    <h3>Artifact Description</h3>
+    <p>
+      Travlr is a full-stack travel application developed using Node.js,
+      Express, Angular, and MongoDB. The project includes a customer-facing
+      website and an administrative application for managing trip information.
+    </p>
+    <h3>Original Artifact</h3>
+    <p>
+      <a href="Travlr-Original-Module1.zip">Download Original Travlr Artifact — Module 1</a>
+    </p>
+    <h3>Enhanced Artifact</h3>
+    <p>
+      <a href="Travlr-Enhanced-Module7.zip">Download Enhanced Travlr Artifact — Module 7</a>
+    </p>
+    <h3>Enhancement Narrative</h3>
+    <p>
+      <a href="CS499_Milestone_Two_Software_Design_and_Engineering_Narrative.docx">
+        Read the Software Design and Engineering Narrative
+      </a>
+    </p>
+    <p>
+      The Travlr application was enhanced to improve administrative trip management and application reliability. The Trips page supports searching by trip name and filtering by trip length and price range. The interface also displays trip images, making travel records easier to identify. In addition, price validation prevents administrators from submitting negative per-person prices.
+      These improvements demonstrate skills in Angular component development, TypeScript, reactive forms, REST API integration, MongoDB/Mongoose data management, JWT-based authentication, and software testing. Testing included searching for a trip by name, clearing filters, verifying image display, and confirming that invalid negative prices are rejected while valid prices are accepted.
+      The enhancement demonstrates how thoughtful interface design, validation, and integration improve the usability and reliability of an existing software solution.
+    </p>
+  </section>
+
+  <section id="algorithms">
+    <h2>Algorithms and Data Structures</h2>
+    <h3>Artifact Description</h3>
+    <p>
+    The enhanced Travlr administration interface uses a TypeScript array to store the retrieved trip records and the `Array.filter()` method to select records that match the administrator's search criteria. The filtering logic supports trip-name searches, trip-length filtering, and minimum and maximum price constraints. Multiple criteria can be applied together, and the interface displays the matching results and handles cases where no records match.
+    For a collection of \(n\) trips, the filtering operation has \(O(n)\) time complexity because each trip may need to be examined. The result collection requires additional space proportional to the number of matching records. This approach is understandable and appropriate for the current dataset, although database-level filtering or indexing could be more efficient for substantially larger datasets.
+    </p>
+    <h3>Original Artifact</h3>
+    <p>
+      <a href="Travlr-Original-Module1.zip">Download Original Travlr Artifact — Module 1</a>
+    </p>
+    <h3>Enhanced Artifact</h3>
+    <p>
+      <a href="Travlr-Enhanced-Module7.zip">Download Enhanced Travlr Artifact — Module 7</a>
+    </p>
+    <h3>Enhancement Narrative</h3>
+    <p>
+      <a href="Isela_Flores_CS499_Milestone_Three_Algorithms_Data_Structure_Narrative(2).docx">
+        Read the Algorithms and Data Structures Narrative
+      </a>
+    </p>
+    <p>
+      The narrative explains the algorithmic improvement, its testing,
+      and the design trade-offs associated with the enhancement.
+    </p>
+  </section>
+
+  <section id="databases">
+    <h2>Databases</h2>
+    <h3>Artifact Description</h3>
+    <p>
+      This artifact focuses on database-backed trip data and the validation
+      of values used by the Travlr application.
+    </p>
+    <h3>Original Artifact</h3>
+    <p>
+      <a href="Travlr-Original-Module1.zip">Download Original Travlr Artifact — Module 1</a>
+    </p>
+    <h3>Enhanced Artifact</h3>
+    <p>
+      <a href="Travlr-Enhanced-Module7.zip">Download Enhanced Travlr Artifact — Module 7</a>
+    </p>
+    <h3>Enhancement Narrative</h3>
+    <p>
+      <a href="Isela_Flores_CS499_Milestone_Four_Databases_Narrative(2).docx">
+        Read the Databases Narrative
+      </a>
+    </p>
+    <p>
+      The database enhancement improves the integrity of Travlr trip-pricing data by preventing negative per-person prices. The Angular form validates the price before submission, while the Mongoose model enforces a minimum value of zero at the data-model level. This layered validation helps protect stored data rather than relying exclusively on client-side checks.
+      Testing covered three boundary cases: a price of -50 was rejected, a valid price of 500 was saved successfully, and a price of 0 was accepted. These tests demonstrate the importance of data validation, consistent business rules, and maintaining data integrity throughout the application's CRUD workflow.
+    </p>
+  </section>
   </main>
 
   <footer>
